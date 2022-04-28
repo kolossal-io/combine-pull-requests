@@ -66,6 +66,6 @@ fi
 
 # Merge all shas together into one commit.
 git merge --no-ff --no-commit "${shas[@]}"
-git commit --message "Merged Pull Requests (${shas[*]})"
+git commit --allow-empty --message "Merged Pull Requests (${shas[*]})"
 
 echo "Merged ${#shas[@]} pull requests"
